@@ -1,0 +1,12 @@
+
+cd ~/beam-app
+
+java src/main/java/com/joe/learning/sample/BeamApp.java --inputText='Joshan'
+
+mvn exec:java -Dexec.args=--inputText='Joshan'
+
+mvn clean package
+
+java -jar target/java-beam-app-0.0.1-SNAPSHOT.jar
+
+java -jar target/java-beam-app-bundled-0.0.1-SNAPSHOT.jar
